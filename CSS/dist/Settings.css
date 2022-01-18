@@ -1,0 +1,83 @@
+.DC-Content {
+  background-color: snow;
+}
+
+.Setting-form > table {
+  width: 95%;
+  margin: auto;
+  font-size: 120%;
+}
+
+.setting-line > td {
+  height: 30pt;
+  padding: 10pt;
+}
+.setting-line > td > input, .setting-line > td > textarea {
+  font-size: 120%;
+  width: 100%;
+  margin: auto;
+}
+.setting-line > td > input {
+  height: 90%;
+}
+.setting-line.empty-line {
+  height: 50pt;
+}
+
+.d-btn {
+  font-size: 120%;
+  border: none;
+  padding: 2% 4%;
+  cursor: pointer;
+  border-radius: 1pt;
+}
+
+.btn-line {
+  margin: 10% 0%;
+}
+.btn-line > td {
+  text-align: center;
+}
+
+#btn-Delete {
+  background-color: #d9534f;
+}
+
+#btn-Suspend {
+  background-color: #f0ad4e;
+}
+
+.btn-table {
+  padding: 3% 0;
+}
+
+.confirm-btn-line {
+  height: 50pt;
+  padding-top: 10%;
+}
+
+.BC-warning {
+  background-color: #f0ad4e;
+}
+
+.BC-danger {
+  background-color: #d9534f;
+}
+
+#delete-confirm {
+  transition: none;
+}
+
+.done-replay {
+  width: 100%;
+  font-size: 130%;
+  text-align: center;
+  color: #5cb85c;
+}
+
+.error-replay {
+  width: 100%;
+  font-size: 130%;
+  text-align: center;
+  color: #d9534f;
+}

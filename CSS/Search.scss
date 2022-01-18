@@ -1,0 +1,27 @@
+$maincolor:#a8dadc;
+$darktheme:#282828;
+$sidecolor1:#1d3557;
+$sidecolor2:#457b9d;
+$lighttheme:snow;
+$warning : #f0ad4e;
+$danger : #d9534f;
+$success :#5cb85c;
+
+.search-wrapper{
+    display: flex;
+    width: 98%;
+    margin: 1% 1%;
+    flex-direction: column;
+    flex-grow: 0;
+    background-color: $lighttheme;
+}
+.see-all-link{
+    color: $sidecolor1;
+    margin-left: 5%;
+}
+.search-head{
+    
+    &>*{
+        justify-content: space-between;
+    }
+}

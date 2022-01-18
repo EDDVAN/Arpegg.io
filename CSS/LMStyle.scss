@@ -1,0 +1,198 @@
+$maincolor:#a8dadc;
+$darktheme:#282828;
+$sidecolor1:#1d3557;
+$sidecolor2:#457b9d;
+$lighttheme:snow;
+$warning : #f0ad4e;
+$danger : #d9534f;
+$success :#5cb85c;
+a{
+    color: $lighttheme;
+}
+#Link2{
+    background: $maincolor;
+    color: $darktheme;
+    font-weight: bold;
+}
+body{
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.article-mid{
+    height: 100%;
+}
+.article-mid>div{
+    padding:1% 1%;
+    width: 98%;
+}
+
+.MT-J,.content{
+    padding:1% 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1% 1%;
+    width: 100%;
+    background-color: $lighttheme;
+    box-shadow: 2pt 2pt 4pt $darktheme;
+}
+
+.content-nav>ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    background:$sidecolor1;
+}
+.content-nav>ul>li{
+    font-size: 120%;
+    padding: 2% 2%;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover{
+        background-color: $maincolor;
+        color: $darktheme;
+        font-weight: bold;
+    }
+    &:hover>a{
+        color: $darktheme;
+    }
+}
+
+.content-inside{
+    width: 96%;
+    height: 96%;
+    margin: 2% 2%;
+}
+
+.c-i-div{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s ease-in-out;
+}
+
+.c-i-ul{
+    padding-left: 10%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    &>li{
+        font-weight: bold;
+    }
+    &>li>span{
+        font-weight: lighter;
+    }
+}
+
+.c-i-title{
+    width: 100%;
+    text-align: center;
+    margin: 1% 0;
+    font-size: 130% ;
+}
+
+.c-i-main{
+    width: 100%;
+    margin: 2% 0;
+    text-align: left;
+    font-size: 140%;
+    &>span{
+        font-weight: bold;
+    }
+    &>p>span{
+        font-weight: bold;
+    }
+    
+    &>h3{
+        text-align: center;
+    }
+    &>h4{
+        padding: .5% 4%;
+        background-color: $darktheme;
+        color: $lighttheme;
+    }
+    &>h5{
+        text-align: center;
+        font-style: italic;
+    }
+}
+
+.J-Container{
+    margin:1% 1%;
+    width: 100%;
+    height: 98%;
+    border: $lighttheme solid 1pt;
+    background: linear-gradient(90deg, $lighttheme 50%, rgba(255,0,0,0) 50%); 
+    background-size: 190%;
+    background-position: right;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+    position: relative;
+}
+.J-Container:hover{
+    background-position: left;
+    background-size: 200%;
+}
+.J-Container:hover>div{
+    color: $darktheme;
+}
+
+.J-Container>div{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    height: 70%;
+    margin-top: 1%;
+    padding-bottom: 1%;
+    font-size: 120%;
+    color: $lighttheme;   
+    transition: 0.4s ease-out;
+    text-shadow: 0 0 4pt $darktheme; 
+}
+.MT-J-inside>div{
+    font-size: 120%;
+}
+
+
+
+.highlighted{
+    background-color: $maincolor;
+    
+    font-weight: bold;
+    &>a{
+        color: $darktheme;
+    }
+}
+
+
+
+.c-i-img{
+    margin: auto;
+    width: 75%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.c-i-main{
+    display: flex;
+    flex-direction: column  ;
+}
+
+
+
+
+
+
+
+
+
+  @media all and (max-width: 1000px) {
+    .MT-J{
+        width: 15%;
+    }
+}   

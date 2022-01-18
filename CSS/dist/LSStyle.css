@@ -1,0 +1,240 @@
+body {
+  height: 500pt;
+  background: linear-gradient(90deg, #282828 50%, #a8dadc 50%, #457b9d 100%);
+  transition: 0.5s ease-out;
+  background-size: 150%;
+  background-position: right;
+}
+
+.main {
+  display: block;
+}
+
+.backleft {
+  background-position: left;
+}
+
+.backright {
+  background-position: right;
+}
+
+.Sign-up-div {
+  width: 75%;
+  height: 100%;
+  transition: 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.Sign-up-div > * {
+  transition: 0.5s ease-out;
+}
+
+.hide {
+  display: none;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.cells {
+  height: 25pt;
+  width: 100%;
+  position: relative;
+}
+
+.cells > * {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cell-top {
+  height: 70pt;
+}
+
+.logo-page {
+  height: 70pt;
+}
+
+.title-span {
+  font-size: 200%;
+  font-weight: bolder;
+  color: snow;
+}
+
+.title-under {
+  color: snow;
+  margin-top: 15pt;
+  font-size: 110%;
+  text-decoration: none;
+}
+
+.LS-link {
+  color: #282828;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.LS-link:hover {
+  font-weight: bolder;
+  text-decoration: underline;
+  font-size: 110%;
+}
+
+.title-cell {
+  height: 50pt;
+  padding-bottom: 5pt;
+}
+
+.info-box {
+  background: linear-gradient(90deg, snow 50%, #a8dadc 50%);
+  transition: 0.5s ease-out;
+  background-size: 200%;
+  background-position: right;
+  font-size: 105%;
+  border: snow solid 1pt;
+  border-left: snow solid 4pt;
+  padding-left: 1%;
+}
+
+.info-box, .agree-span, .submit-btn {
+  width: 30%;
+  height: 25pt;
+  color: snow;
+}
+
+.info-box {
+  color: #282828;
+  font-weight: bold;
+}
+
+.input-cell {
+  padding-top: 10pt;
+}
+
+.info-box::placeholder {
+  font-size: 80%;
+  font-style: italic;
+  color: snow;
+}
+
+.info-box:hover, .info-box:focus {
+  background-position: left;
+  color: #282828;
+  font-weight: bolder;
+}
+
+.info-box:hover.info-box::placeholder, .info-box:focus.info-box::placeholder {
+  color: #282828;
+  font-weight: bold;
+}
+
+.agree-span {
+  text-align: justify;
+  font-size: 62.8%;
+}
+
+.agree-span > a {
+  transition: 0.5s ease-out;
+  font-weight: bolder;
+  color: #282828;
+  text-decoration: none;
+}
+
+.agree-span > a:hover {
+  text-decoration: underline;
+  font-size: 102%;
+}
+
+.submit-btn {
+  transition: 0.5s ease-out;
+  font-weight: bolder;
+  color: snow;
+  background: #457b9d;
+  box-shadow: 0 0 4pt #282828;
+}
+
+.submit-btn:hover {
+  color: #282828;
+  background: snow;
+  font-size: 105%;
+}
+
+.login-div > .cells > .title-span {
+  font-size: 200%;
+  font-weight: bolder;
+  color: #a8dadc;
+}
+
+.login-div > .cells > .title-under {
+  color: snow;
+  margin-top: 15pt;
+  font-size: 110%;
+  text-decoration: none;
+}
+
+.login-div > .cells > .title-under > .LS-link {
+  color: #a8dadc;
+}
+
+.login-div > .cells > .info-box {
+  background: linear-gradient(90deg, #a8dadc 50%, #282828 50%);
+  transition: 0.5s ease-out;
+  background-size: 200%;
+  background-position: right;
+  border: snow solid 1pt;
+  border-left: snow solid 4pt;
+}
+
+.login-div > .cells > .agree-span, .login-div > .cells > .submit-btn {
+  color: snow;
+}
+
+.login-div > .cells > .info-box {
+  color: #a8dadc;
+}
+
+.login-div > .cells > .info-box::placeholder {
+  color: snow;
+}
+
+.login-div > .cells > .info-box:hover, .login-div > .cells > .info-box:focus {
+  background-position: left;
+  color: #282828;
+}
+
+.login-div > .cells > .info-box:hover.info-box::placeholder, .login-div > .cells > .info-box:focus.info-box::placeholder {
+  color: #282828;
+}
+
+.login-div > .cells > .submit-btn {
+  transition: 0.5s ease-out;
+  font-weight: bolder;
+  color: snow;
+  background: #457b9d;
+  box-shadow: 0 0 4pt #282828;
+}
+
+.login-div > .cells > .submit-btn:hover {
+  color: #282828;
+  background: snow;
+  font-size: 105%;
+}
+
+.forgotpwd {
+  transition: 0.5s ease-out;
+  color: snow;
+  text-decoration: none;
+}
+
+.forgotpwd:hover {
+  font-size: 102%;
+}

@@ -1,0 +1,228 @@
+$maincolor:#a8dadc;
+$darktheme:#282828;
+$sidecolor1:#1d3557;
+$sidecolor2:#457b9d;
+$lighttheme:snow;
+$warning : #f0ad4e;
+$danger : #d9534f;
+$success :#5cb85c;
+
+@mixin center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)  
+}
+@mixin centerH {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);    
+}
+@mixin centerV {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+body{
+    height: 500pt;
+    background: linear-gradient(90deg, $darktheme 50%, $maincolor 50%, $sidecolor2 100%);
+    transition: .5s ease-out;
+    background-size: 150%;
+    background-position:right;
+}
+.main{
+    display: block;
+}
+.backleft{
+    background-position:left;
+}
+.backright{
+    background-position:right;
+}
+.Sign-up-div{
+    width: 75%;
+    height: 100%;
+    transition: .5s ease-out;
+    display: flex;
+    flex-direction: column;
+}
+.Sign-up-div>*{
+    transition: .5s ease-out;
+}
+.hide{
+    display: none;
+}
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
+
+.cells{
+    height: 25pt;
+    width: 100%;
+    position: relative;
+}
+.cells>*{
+    @include center();
+}
+.cell-top{
+    height: 70pt ;
+}
+.logo-page{
+    height: 70pt;
+}
+
+//sign up
+
+.title-span{
+    font-size: 200%;
+    font-weight: bolder;
+    color: $lighttheme;
+}
+.title-under{
+    color: $lighttheme;
+    margin-top: 15pt;
+    font-size: 110%;
+    text-decoration: none;
+}
+.LS-link{
+    color: $darktheme;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: .5s ease-out;
+}
+.LS-link:hover{
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 110%;
+}
+.title-cell{
+    height: 50pt;
+    padding-bottom: 5pt;
+}
+.info-box{
+    background: linear-gradient(90deg, $lighttheme 50%, $maincolor 50%);
+    transition: .5s ease-out;
+    background-size: 200%;
+    background-position:right;
+    font-size: 105%;
+    border: $lighttheme solid 1pt;
+    border-left: $lighttheme solid 4pt;
+    padding-left: 1%;
+}
+.info-box,.agree-span,.submit-btn{
+    width: 30%;
+    height: 25pt;
+    color: $lighttheme;
+}
+.info-box{
+    color: $darktheme;
+    font-weight: bold;
+}
+.input-cell{
+    padding-top: 10pt;
+}
+.info-box::placeholder{
+    font-size: 80%;
+    font-style: italic;
+    color: $lighttheme;
+}
+.info-box:hover,.info-box:focus{
+    background-position: left;
+    color: $darktheme;
+    font-weight: bolder;
+}   
+.info-box:hover.info-box::placeholder,.info-box:focus.info-box::placeholder{
+    color: $darktheme;
+    font-weight: bold;
+}
+.agree-span{
+    text-align: justify;
+    font-size: 62.8%;
+}
+.agree-span>a{
+    transition: .5s ease-out;
+    font-weight: bolder;
+    color: $darktheme;
+    text-decoration:none;
+}
+.agree-span>a:hover{
+    text-decoration:underline;
+    font-size: 102%;
+}
+.submit-btn{
+    transition: .5s ease-out;
+    font-weight: bolder;
+    color: $lighttheme;
+    background:$sidecolor2;
+    box-shadow: 0 0 4pt $darktheme;
+}
+.submit-btn:hover{
+    color: $darktheme;
+    background:$lighttheme;
+    font-size: 105%;
+    
+}
+
+//login
+
+.login-div>.cells>.title-span{
+    font-size: 200%;
+    font-weight: bolder;
+    color: $maincolor;
+}
+.login-div>.cells>.title-under{
+    color: $lighttheme;
+    margin-top: 15pt;
+    font-size: 110%;
+    text-decoration: none;
+}
+.login-div>.cells>.title-under>.LS-link{
+    color: $maincolor;
+}
+.login-div>.cells>.info-box{
+    background: linear-gradient(90deg, $maincolor 50%, $darktheme 50%);
+    transition: .5s ease-out;
+    background-size: 200%;
+    background-position:right;
+    border: $lighttheme solid 1pt;
+    border-left: $lighttheme solid 4pt;
+}
+.login-div>.cells>.agree-span,.login-div>.cells>.submit-btn{
+    color: $lighttheme;
+}
+.login-div>.cells>.info-box{
+    color: $maincolor;
+}
+.login-div>.cells>.info-box::placeholder{
+    color: $lighttheme;
+}
+.login-div>.cells>.info-box:hover,.login-div>.cells>.info-box:focus{
+    background-position: left;
+    color: $darktheme;
+}   
+.login-div>.cells>.info-box:hover.info-box::placeholder,.login-div>.cells>.info-box:focus.info-box::placeholder{
+    color: $darktheme;
+}
+.login-div>.cells>.submit-btn{
+    transition: .5s ease-out;
+    font-weight: bolder;
+    color: $lighttheme;
+    background:$sidecolor2;
+    box-shadow: 0 0 4pt $darktheme;
+}
+.login-div>.cells>.submit-btn:hover{
+    color: $darktheme;
+    background:$lighttheme;
+    font-size: 105%;
+}
+.forgotpwd{
+    transition: .5s ease-out;
+    color: $lighttheme;
+    text-decoration: none;
+}
+.forgotpwd:hover{
+    font-size: 102%;
+}

@@ -1,0 +1,137 @@
+$maincolor:#a8dadc;
+$darktheme:#282828;
+$sidecolor1:#1d3557;
+$sidecolor2:#457b9d;
+$lighttheme:snow;
+$warning : #f0ad4e;
+$danger : #d9534f;
+$success :#5cb85c;
+$padAvg:1%;
+
+@mixin Pad {
+    width: 97%;
+    margin: auto;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+}
+#Link6{
+    background: $maincolor;
+    color: $darktheme;
+    font-weight: bold;
+}
+body{
+    height: 500pt;
+}
+.top-container,.bot-left,.bot-right{
+    background-image: linear-gradient(to left, rgba(255,0,0,0) 53%, rgb(40, 40, 40, 0.5) 53%);
+    background-position: right;
+    background-size: 210%;
+    transition: 0.5s ease-out;
+    
+}
+.bot-left,.bot-right{
+    padding-top: 10pt;
+}
+.top-container:hover,.bot-left:hover,.bot-right:hover{
+    background-position: left;
+}
+.about-container{
+    @include Pad();
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.top-container,.bot-container{
+    padding: 10pt;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    display: flex;
+    flex-flow: row;
+}
+.top-container{
+    height: 150pt;
+}
+.EddVan{
+    height: 140pt;
+    width: 140pt;
+    border-radius: 50%;
+    margin-right: 15pt;
+    box-shadow: 0 0 8pt $darktheme;
+    transition: .4s ease-out;
+}
+.EddVan:hover{
+    border-radius: 45%;
+    margin-bottom: 5pt;
+}
+.about-EddVan{
+    width: 300pt;
+    flex-grow: 1;
+    padding-left: 10pt;
+    padding-top: 5pt;
+}
+;.about-EddVan>*{
+    color: $lighttheme;
+    cursor: pointer;
+}
+.about-EddVan>h1,.bot-right>h1{
+    border-left: $lighttheme solid 7pt;
+    background-image: linear-gradient(to left, rgba(255,0,0,0) 80%, $darktheme 80%);
+    background-size: 150%;
+    background-position: right;
+    padding-left: 10pt ;
+    transition: .3s ease-out;
+    cursor: pointer;
+    color: $lighttheme;
+}
+.about-EddVan>h1:hover,.bot-left>h1:hover,.bot-right>h1:hover{
+    background-position: left;
+}
+.about-EddVan>p,.bot-right>p{
+    padding-left: 10pt;
+    transition: .3s ease-out;
+    cursor: pointer;
+    color: $lighttheme;
+}
+.about-EddVan>p:hover,.bot-right>p:hover{
+    font-size: 101%;
+    font-weight: bolder;
+}
+.bot-container{
+    height: 200pt;
+}
+.bot-left{
+
+    width: 30%;
+}
+.bot-left>h1{
+    color:$lighttheme;
+    font-size:150%;
+    border-left: $lighttheme solid 4pt;
+    padding-left: 5pt;
+    background-image: linear-gradient(to left, rgba(255,0,0,0) 55%, $lighttheme 55%,$lighttheme 99%,rgba(255,0,0,0) 99%);
+    background-size: 200%;
+    background-position: right;
+    transition: .3s ease-out;
+    cursor: pointer;
+}
+.bot-left>h1:hover{
+    color: $darktheme;
+    background-image: linear-gradient(to left, rgba(255,0,0,0) 55%, $lighttheme 55%);
+}
+.bot-left>span{
+    display: block;
+    margin-left: 15pt;
+    cursor: pointer;
+    transition: .3s ease-out;
+    color: $lighttheme;
+}
+.bot-left>span:hover{
+    font-size: 105%;
+    font-weight: bolder;
+}
+.bot-right{
+    padding-left: 15pt;
+    width: 70%;
+}
+
+

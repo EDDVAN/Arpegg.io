@@ -1,0 +1,68 @@
+.article {
+  max-height: 1500pt;
+}
+
+.P-Content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.P-Title {
+  display: flex;
+  flex-direction: row;
+  margin: 1% 1%;
+  padding: 1% 1%;
+  font-size: 100%;
+  color: snow;
+  text-shadow: 0 0 4pt #282828;
+}
+.P-Title.with-h1-C {
+  justify-content: center;
+}
+.P-Title > * {
+  margin: 1% 1%;
+}
+
+.profile-profile-pic {
+  height: 150pt;
+  width: 150pt;
+  background-image: url(Profile-Pics/profile-pic-placeholder.png);
+  background-size: 100%;
+  flex-basis: 100%;
+  flex-shrink: 0;
+  max-width: 150pt;
+}
+
+.username-bio {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+.username-bio > .username-space {
+  flex-basis: 80%;
+  display: grid;
+  align-items: center;
+}
+.username-bio > .username-space > h1 {
+  margin-left: 2%;
+}
+.username-bio > .Bio-space {
+  flex-basis: 100%;
+  background-color: rgba(40, 40, 40, 0.5);
+  padding: 1% 2%;
+  box-shadow: 1pt 1pt 4pt #282828;
+}
+.username-bio > .Bio-space > span {
+  font-size: 103%;
+  font-weight: bold;
+  margin-left: 1%;
+}
+.username-bio > .Bio-space > p {
+  font-size: 101%;
+  margin-left: 2%;
+}
+
+.d-btn {
+  padding: 1% 2%;
+}

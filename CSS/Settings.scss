@@ -1,0 +1,84 @@
+$maincolor:#a8dadc;
+$darktheme:#282828;
+$sidecolor1:#1d3557;
+$sidecolor2:#457b9d;
+$lighttheme:snow;
+$warning : #f0ad4e;
+$danger : #d9534f;
+$success :#5cb85c;
+
+.DC-Content{
+    background-color: $lighttheme;
+}
+.Setting-form>table{
+    width: 95%;
+    margin: auto;
+    font-size: 120%;
+}
+.setting-line{
+    &>td{
+    height: 30pt;
+    padding: 10pt;
+        &>input,&>textarea{
+            font-size: 120%;
+            width: 100%;
+            margin: auto;
+        }
+        &>input{
+            height: 90%;
+
+        }
+    }
+    &.empty-line{
+        height: 50pt;
+    }
+}
+.d-btn{
+    font-size: 120%;
+    border: none;
+    padding: 2% 4%;
+    cursor: pointer;
+    border-radius: 1pt;
+}
+.btn-line{
+    margin: 10% 0%;
+    &>td{
+        text-align: center;
+    }
+}
+#btn-Delete{
+    background-color: $danger;
+}
+#btn-Suspend{
+    background-color: $warning;
+}
+.btn-table{
+    padding: 3% 0;
+}
+.confirm-btn-line{
+    height: 50pt;
+    padding-top: 10%;
+}
+
+.BC-warning{
+    background-color: $warning;
+}
+.BC-danger{
+    background-color: $danger;
+}
+#delete-confirm{
+    transition: none;
+}
+
+.done-replay{
+    width: 100%;
+    font-size: 130%;
+    text-align: center;
+    color: $success;
+}
+.error-replay{
+    width: 100%;
+    font-size: 130%;
+    text-align: center;
+    color: $danger;
+}

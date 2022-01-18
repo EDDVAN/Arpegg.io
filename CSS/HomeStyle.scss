@@ -1,0 +1,148 @@
+/*
+$maincolor:#9f86c0;
+$darktheme:#282828;
+$sidecolor1:#352663;
+$sidecolor2:#5e548e;
+$lighttheme:snow;
+*/
+
+$maincolor:#a8dadc;
+$darktheme:#282828;
+$sidecolor1:#1d3557;
+$sidecolor2:#457b9d;
+$lighttheme:snow;
+$warning : #f0ad4e;
+$danger : #d9534f;
+$success :#5cb85c;
+
+#Link1{
+    background: $maincolor;
+    color: $darktheme;
+    font-weight: bold;
+}
+body{
+    height: auto;
+    justify-content: space-around;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    height: 1100pt;
+}
+.article>div{
+    width: 100%;
+}
+.article-header{
+    display: flex;
+    height: 25%;
+    padding: 2% 2%;
+}
+.article-mid{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+}
+.article-lower{
+    height: 0%;
+}
+
+.header-container{
+    height: 100%;
+    display: flex;
+    width: 100%; 
+    font-size: 190%;
+    background: linear-gradient(90deg, $darktheme 50%, $lighttheme 50%); 
+    background-size: 195%;
+    background-position: right;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+.header-container:hover{
+    background-position: left;
+}
+.header-container:hover>div{
+    color: $maincolor;
+    text-shadow: 0 0 2pt $maincolor; 
+
+}
+.header-container>div{
+    width: 70%;
+    margin: auto;
+    height: 70%;
+    text-align: center;
+    align-items: center;
+    color: $darktheme;
+    transition: 0.4s ease-out;
+}
+
+
+.article-mid>div{
+    padding:1% 1%;
+    width: 98%;
+    height: 25%;
+}
+
+.J-first-row>div,.J-sec-row>div,.J-thrd-row>div{
+    margin:1% 1%;
+    width: 50%;
+    height: 100%;
+    border: $lighttheme solid 1pt;
+}
+.LM-J,.J-first-row,.J-sec-row,.J-thrd-row{
+    padding:1% 1%;
+    display: flex;
+    flex-direction: row;
+    height: 25%;
+}
+
+.J-Container{
+    margin:1% 1%;
+    width: 100%;
+    height: inherit;
+    border: $lighttheme solid 1pt;
+    background: linear-gradient(90deg, $lighttheme 50%, rgba(255,0,0,0) 50%); 
+    background-size: 190%;
+    background-position: right;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+    position: relative;
+}
+.LM-J,.MT-J,.TT-J,.Practice-J,.Tools-J,.Chords-J,.Scales-J{
+    transition: 0.4s ease-out;
+}
+.J-Container.slide-in{
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+}
+.J-Container:hover{
+    background-position: left;
+    background-size: 200%;
+}
+.J-Container:hover>div{
+    color: $darktheme;
+}
+
+.J-Container>div{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    height: 70%;
+    margin-top: 3%;
+    font-size: 120%;
+    color: $lighttheme;   
+    transition: 0.4s ease-out;
+    text-shadow: 0 0 4pt $darktheme; 
+}
+.MT-J-inside>div{
+    font-size: 150%;
+}
+
+.J-Container{
+    width: 50%;
+    height: 100%;
+}
+.MT-J-inside{
+    width: 100%;
+}

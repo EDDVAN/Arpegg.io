@@ -1,0 +1,60 @@
+$maincolor:#a8dadc;
+$darktheme:#282828;
+$sidecolor1:#1d3557;
+$sidecolor2:#457b9d;
+$lighttheme:snow;
+$warning : #f0ad4e;
+$danger : #d9534f;
+$success :#5cb85c;
+
+.DC-Title{
+    height: 3%;
+}
+.article{
+    height: 1600pt;
+}
+.pagelinkwrap{
+    display: flex;
+    justify-content: center;
+    &>a{
+        padding-right: 1%;
+        font-size: 105%;
+        color: $darktheme;
+        font-weight: bold;
+    }
+}
+.d-btn{
+    padding: 1% 2%;
+}
+.l-midi-c{
+    justify-content: space-between;
+    &>p{
+        font-size: 105%;
+        &>span{
+            font-size: 102%;
+            color: $sidecolor1
+        }
+    }
+}
+.profile-pic{
+    background-color: snow;
+    height: 40pt;
+    width: 40pt;
+    box-shadow: 1pt 1pt 3pt rgb(197, 197, 197);
+    margin: 1pt 2pt;
+    background-image: url(../../Profile-Pics/profile-pic-placeholder.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.audio-wrap>div>div>h2{
+    margin-left: 2%;
+}
+.user-info-loop{
+    display: flex;
+    flex-direction: row;
+}
+.loop-user-name{
+    color:$sidecolor2;
+}
+
+    

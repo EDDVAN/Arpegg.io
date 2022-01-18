@@ -1,0 +1,17 @@
+.search-wrapper {
+  display: flex;
+  width: 98%;
+  margin: 1% 1%;
+  flex-direction: column;
+  flex-grow: 0;
+  background-color: snow;
+}
+
+.see-all-link {
+  color: #1d3557;
+  margin-left: 5%;
+}
+
+.search-head > * {
+  justify-content: space-between;
+}
